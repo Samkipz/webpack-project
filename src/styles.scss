@@ -1,0 +1,82 @@
+
+// Center elements
+.centeredItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    bottom: 50%;
+    position: relative;
+    flex-direction: column;
+    height: 50vmin;
+    width: 50%;
+}
+
+.title{
+    display: 'flex';
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vmin;
+    position: absolute;
+    top: 2%;
+    // color: red;
+}
+
+.counterTime{
+    font-size: 8vmin;
+    position: absolute;
+    left: 50%;
+    // top: 20%;
+    display: flex;
+    justify-content: center;
+    // top: 10vh;
+}
+
+.mybtn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 60%;
+}
+
+.text{
+    border: 1px solid black;
+    position: absolute;
+    top: 80%;
+    color: red;
+    display: flex;
+}
+
+/** Beautiful Buttons curtesy of https://getcssscan.com/css-buttons-examples */
+@mixin button-color($bg){
+    background-image: $bg;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+    width: 20%;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    &:hover {
+        background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+    }
+}
+
+.button-1{
+    @include button-color(linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%));
+    margin-right: 5px;
+}
+
+.button-2{
+    @include button-color(linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%))
+}
+
+
